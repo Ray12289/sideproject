@@ -1850,3 +1850,70 @@ footer {
     max-width: 100%;
   }
 }
+
+/* ==========================================
+   KICKS_NEON HOLOGRAPHIC VALIDATION SEAL
+   ========================================== */
+.original-seal {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-green);
+  background: rgba(10, 10, 13, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+  z-index: 10;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  animation: sealPulse 2s infinite ease-in-out;
+}
+
+.product-card:hover .original-seal {
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.5);
+}
+
+.product-card:nth-child(even) .original-seal {
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.4);
+}
+
+.product-card:nth-child(even):hover .original-seal {
+  border-color: var(--accent-green);
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.5);
+}
+
+.calendar-card .original-seal {
+  bottom: 15px;
+  right: 15px;
+  border-color: var(--accent-green);
+}
+
+.calendar-card.orange-theme .original-seal {
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.4);
+}
+
+.original-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px var(--accent-green));
+}
+
+.product-card:nth-child(even) .original-seal img {
+  filter: drop-shadow(0 0 2px var(--accent-orange));
+}
+
+@keyframes sealPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}

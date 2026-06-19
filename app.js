@@ -4,8 +4,8 @@
 const SNEAKERS_DATA = [
   {
     id: 1,
-    name: 'Nike Air Max "Cyber Gaze"',
-    brand: 'Nike',
+    name: 'KICKS_NEON "Cyber Gaze V1"',
+    brand: 'CYBER_EDGE',
     price: 6200,
     sizes: [8, 9, 10, 11],
     image: 'assets/images/sneaker_1.png',
@@ -14,8 +14,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 2,
-    name: 'Nike Dunk Low "Neon Grid"',
-    brand: 'Nike',
+    name: 'KICKS_NEON "Grid Runner X"',
+    brand: 'CYBER_EDGE',
     price: 4500,
     sizes: [7, 8, 9, 10, 12],
     image: 'assets/images/sneaker_2.png',
@@ -24,8 +24,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 3,
-    name: 'Nike Air Jordan 1 "Glitch Edge"',
-    brand: 'Nike',
+    name: 'KICKS_NEON "Glitch Phantom"',
+    brand: 'CYBER_EDGE',
     price: 7800,
     sizes: [8, 9, 10, 11, 12],
     image: 'assets/images/sneaker_3.png',
@@ -34,8 +34,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 4,
-    name: 'Nike Zoom "Pulse Strap"',
-    brand: 'Nike',
+    name: 'KICKS_NEON "Pulse Strap WP"',
+    brand: 'CYBER_EDGE',
     price: 5300,
     sizes: [7, 8, 9, 10, 11],
     image: 'assets/images/sneaker_4.png',
@@ -44,8 +44,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 5,
-    name: 'Adidas Yeezy Boost "Future Knit"',
-    brand: 'adidas',
+    name: 'KICKS_NEON "Future Knit Prime"',
+    brand: 'NEON_STREET',
     price: 9600,
     sizes: [8, 9, 10, 11, 12],
     image: 'assets/images/sneaker_5.png',
@@ -54,8 +54,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 6,
-    name: 'Adidas Ultraboost "Holo Core"',
-    brand: 'adidas',
+    name: 'KICKS_NEON "Holo Boost Evo"',
+    brand: 'NEON_STREET',
     price: 5800,
     sizes: [7, 8, 9, 10, 11],
     image: 'assets/images/sneaker_6.png',
@@ -64,8 +64,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 7,
-    name: 'Adidas NMD_R1 "Matrix Rain"',
-    brand: 'adidas',
+    name: 'KICKS_NEON "Rain Matrix Low"',
+    brand: 'NEON_STREET',
     price: 4900,
     sizes: [8, 9, 10],
     image: 'assets/images/sneaker_7.png',
@@ -74,8 +74,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 8,
-    name: 'Adidas Forum High "Cyber Street"',
-    brand: 'adidas',
+    name: 'KICKS_NEON "Street High LED"',
+    brand: 'NEON_STREET',
     price: 5200,
     sizes: [9, 10, 11, 12],
     image: 'assets/images/sneaker_8.png',
@@ -84,8 +84,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 9,
-    name: 'New Balance 9060 "Neon Tech"',
-    brand: 'New Balance',
+    name: 'KICKS_NEON "Neon Tech 9000"',
+    brand: 'HOLO_SYNTH',
     price: 6500,
     sizes: [8, 9, 10, 11],
     image: 'assets/images/sneaker_9.png',
@@ -94,8 +94,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 10,
-    name: 'New Balance 1906R "Forge Orange"',
-    brand: 'New Balance',
+    name: 'KICKS_NEON "Orange Forge Tech"',
+    brand: 'HOLO_SYNTH',
     price: 6800,
     sizes: [7, 8, 9, 10, 11, 12],
     image: 'assets/images/sneaker_10.png',
@@ -104,8 +104,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 11,
-    name: 'New Balance 550 "Retro Volt"',
-    brand: 'New Balance',
+    name: 'KICKS_NEON "Retro Volt OG"',
+    brand: 'HOLO_SYNTH',
     price: 4200,
     sizes: [7, 8, 9, 10],
     image: 'assets/images/sneaker_11.png',
@@ -114,8 +114,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 12,
-    name: 'New Balance 2002R "Cyan Obsidian"',
-    brand: 'New Balance',
+    name: 'KICKS_NEON "Obsidian Wave-Rider"',
+    brand: 'HOLO_SYNTH',
     price: 5900,
     sizes: [8, 9, 10, 11, 12],
     image: 'assets/images/sneaker_12.png',
@@ -124,8 +124,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 13,
-    name: 'Puma RS-X "Neon TPU"',
-    brand: 'Puma',
+    name: 'KICKS_NEON "Void TPU RS"',
+    brand: 'VOID_TECH',
     price: 4800,
     sizes: [7, 8, 9, 10, 11],
     image: 'assets/images/sneaker_13.png',
@@ -134,8 +134,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 14,
-    name: 'Puma Rider "Lime Alley"',
-    brand: 'Puma',
+    name: 'KICKS_NEON "Lime Alley Rider"',
+    brand: 'VOID_TECH',
     price: 3900,
     sizes: [8, 9, 10],
     image: 'assets/images/sneaker_14.png',
@@ -144,8 +144,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 15,
-    name: 'Puma Cell "Matrix Green"',
-    brand: 'Puma',
+    name: 'KICKS_NEON "Matrix Green Cell"',
+    brand: 'VOID_TECH',
     price: 4600,
     sizes: [9, 10, 11],
     image: 'assets/images/sneaker_15.png',
@@ -154,8 +154,8 @@ const SNEAKERS_DATA = [
   },
   {
     id: 16,
-    name: 'Puma Suede "Glow Piping"',
-    brand: 'Puma',
+    name: 'KICKS_NEON "Glow Suede Classic"',
+    brand: 'VOID_TECH',
     price: 3500,
     sizes: [7, 8, 9, 10, 11, 12],
     image: 'assets/images/sneaker_16.png',
@@ -500,6 +500,9 @@ function renderProducts() {
       <div class="product-card" data-id="${item.id}">
         <div class="product-img-wrapper">
           ${tagsHtml ? `<div class="product-tags">${tagsHtml}</div>` : ''}
+          <div class="original-seal">
+            <img src="assets/images/logo.png" alt="KICKS_NEON Original Seal">
+          </div>
           <img class="product-img" src="${item.image}" alt="${item.name}" loading="lazy">
         </div>
         <div class="product-info">
