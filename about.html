@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>品牌願景 | KICKS_NEON | 潮流球鞋電商平台</title>
+  <meta name="description" content="關於 KICKS_NEON：用科技與街頭文化重塑球鞋美學，為您帶來極具未來感與機能主義設計的潮流球鞋。">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img class="logo-img" src="assets/images/logo.png" alt="KICKS_NEON Logo">
+        <span class="logo-text">KICKS_NEON</span>
+      </a>
+      
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="about.html" class="active">品牌願景</a></li>
+          <li><a href="releases.html">發售日曆</a></li>
+          <li><a href="shop.html">潮流商城</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="cart-icon-wrapper" id="cart-icon-btn" aria-label="Open shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </div>
+        
+        <div class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       ABOUT US SECTION (公司簡介)
+       ========================================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-info">
+          <span class="about-tagline">About KICKS_NEON</span>
+          <h1 class="about-heading">用科技與街頭文化<br>重塑球鞋美學</h1>
+          <p class="about-p">
+            KICKS_NEON 創立於 2024 年，總部位於數位街頭文化的交匯中心。我們不僅是一家潮流球鞋電商平台，更是一個將未來主義、機能科技與街頭次文化融合的先鋒社群。
+          </p>
+          <p class="about-p">
+            我們的願景是打破現實與虛擬的界線，精選全球最具前衛設計感的球鞋藝術品。每一雙鞋款都是我們對未來街頭機能主義（Techwear）與 Cyberpunk 風格的獨特詮釋。
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <h3 class="highlight-title">100% 正品保障</h3>
+              <p class="highlight-desc">所有產品皆通過專業鑑定團隊雙重認證，保證官方正品。</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3 class="highlight-title">安全加密交易</h3>
+              <p class="highlight-desc">採用最先進的 SSL 加密與區塊鏈防偽標籤技術保障交易安全。</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <h3 class="highlight-title">全球極速配送</h3>
+              <p class="highlight-desc">攜手頂級航空物流，最快在發售後 48 小時內送達您手中。</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-users"></i></div>
+              <h3 class="highlight-title">街頭社群共融</h3>
+              <p class="highlight-desc">與全球潮流愛好者連線，掌握第一手發售與穿搭情報。</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="about-img-frame">
+            <img class="about-image" src="assets/images/sneaker_10.png" alt="Trendy Sneaker Display">
+          </div>
+          <div class="about-stat-overlay">
+            <span class="stat-number">150K+</span>
+            <span class="stat-label">註冊會員數</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">KICKS_NEON</div>
+      <p class="footer-copy">&copy; 2026 KICKS_NEON Inc. All rights reserved. 潮流球鞋科技電商平台版權所有。</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SHOPPING CART DRAWER (購物車側欄抽屜)
+       ========================================== -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">購物清單 CART</h2>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <!-- 購物車商品清單 (將由 JS 渲染) -->
+    <div class="cart-items-list" id="cart-items-list">
+      <!-- Generated dynamically -->
+    </div>
+    
+    <div class="cart-drawer-footer">
+      <div class="cart-summary">
+        <span class="cart-total-label">總計金額 TOTAL</span>
+        <span class="cart-total-value" id="cart-total">NT$0</span>
+      </div>
+      <button class="btn-cyber btn-cyber-orange" onclick="checkout()">
+        確認結帳 CHECKOUT <i class="fa-solid fa-credit-card"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>

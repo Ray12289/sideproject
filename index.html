@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKS_NEON | 潮流球鞋電商平台 - Cyberpunk & Streetwear Boutique</title>
+  <meta name="description" content="KICKS_NEON 限量潮流球鞋發售平台。匯集 Nike, adidas, New Balance 等頂尖限量鞋款，結合 Cyberpunk 街頭美學與極致科技感設計。">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img class="logo-img" src="assets/images/logo.png" alt="KICKS_NEON Logo">
+        <span class="logo-text">KICKS_NEON</span>
+      </a>
+      
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="active">首頁</a></li>
+          <li><a href="about.html">品牌願景</a></li>
+          <li><a href="releases.html">發售日曆</a></li>
+          <li><a href="shop.html">潮流商城</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="cart-icon-wrapper" id="cart-icon-btn" aria-label="Open shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </div>
+        
+        <div class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION (滿版球鞋輪播圖)
+       ========================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-slider">
+      
+      <!-- Slide 1 (Jordan) -->
+      <div class="hero-slide active">
+        <img class="hero-bg" src="assets/images/sneaker_3.png" alt="Air Jordan 1 Glitch Edge Background">
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-badge text-neon-green">Limited Edition</span>
+            <h1 class="hero-title">AIR JORDAN 1<br><span class="text-neon-green">GLITCH EDGE</span></h1>
+            <p class="hero-subtitle">獨家限量發售。採用解構式皮革與霓虹綠色極致冷光邊緣設計，重塑街頭經典神話。</p>
+            <button class="btn-cyber" onclick="addToCart(3)">立即購買 <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 2 (Yeezy) -->
+      <div class="hero-slide">
+        <img class="hero-bg" src="assets/images/sneaker_5.png" alt="Yeezy Boost Future Knit Background">
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-badge text-neon-orange">Exclusive Drop</span>
+            <h1 class="hero-title">YEEZY BOOST<br><span class="text-neon-orange">FUTURE KNIT</span></h1>
+            <p class="hero-subtitle">機能美學，概念重塑。高飽和度螢光線條與編織碳纖維的科技碰撞，顛覆日常著感。</p>
+            <button class="btn-cyber btn-cyber-orange" onclick="addToCart(5)">立即購買 <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 3 (NB 9060) -->
+      <div class="hero-slide">
+        <img class="hero-bg" src="assets/images/sneaker_9.png" alt="NB 9060 Neon Tech Background">
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-badge text-neon-green">New Collection</span>
+            <h1 class="hero-title">NB 9060<br><span class="text-neon-green">NEON TECH</span></h1>
+            <p class="hero-subtitle">街頭復古，數位重生。解構式厚底搭載避震科技，以電子螢光綠重燃未來復古主義。</p>
+            <button class="btn-cyber" onclick="addToCart(9)">立即購買 <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Slider Controls -->
+    <button class="slider-btn prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-btn next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+    
+    <div class="slider-dots"></div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">KICKS_NEON</div>
+      <p class="footer-copy">&copy; 2026 KICKS_NEON Inc. All rights reserved. 潮流球鞋科技電商平台版權所有。</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SHOPPING CART DRAWER (購物車側欄抽屜)
+       ========================================== -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">購物清單 CART</h2>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <!-- 購物車商品清單 (將由 JS 渲染) -->
+    <div class="cart-items-list" id="cart-items-list">
+      <!-- Generated dynamically -->
+    </div>
+    
+    <div class="cart-drawer-footer">
+      <div class="cart-summary">
+        <span class="cart-total-label">總計金額 TOTAL</span>
+        <span class="cart-total-value" id="cart-total">NT$0</span>
+      </div>
+      <button class="btn-cyber btn-cyber-orange" onclick="checkout()">
+        確認結帳 CHECKOUT <i class="fa-solid fa-credit-card"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>
